@@ -20,7 +20,7 @@ function toggleReveal($hideElement, $showElement){
             $('button').addClass('failed');
           }, 3400);
           setTimeout(function(){
-            alert("No payment detected please check payment and try again!");
+            alert("Your payment has been confirmed and your account has been credited succesfully!");
             $('button').parent().removeClass('active');
             $('button').removeClass('failed');
           }, 4200);
