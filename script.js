@@ -17,12 +17,12 @@ function toggleReveal($hideElement, $showElement){
         $('button').click(function(){
           $('button').parent().addClass('active');
           setTimeout(function(){
-            $('button').addClass('success');
+            $('button').addClass('failed');
           }, 3400);
           setTimeout(function(){
-            alert("Your payment has been confirmed and your account has been credited successfully!");
+            alert("No payment detected please check payment and try again!");
             $('button').parent().removeClass('active');
-            $('button').removeClass('success');
+            $('button').removeClass('failed');
           }, 4200);
         });
       });
